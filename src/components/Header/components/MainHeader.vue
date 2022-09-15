@@ -5,11 +5,22 @@
         <img src="../../../assets/logo-white.svg" alt="Nespresso">
       </div>
       <div class="main-header--userArea">
-        opções de login
+        <user-options></user-options>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import UserOptions from './UserOptions.vue';
+
+export default {
+  name: 'main-header',
+  components: {
+    UserOptions
+  }
+}
+</script>
 
 <style scoped>
 .main-header--container {
