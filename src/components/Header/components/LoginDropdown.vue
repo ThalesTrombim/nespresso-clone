@@ -47,6 +47,7 @@ export default {
   max-width: inherit;
   margin-left: -16px;
   min-width: 227px;
+  padding: 14px;
 }
 .login-dropdown--header{
   padding: 0;
