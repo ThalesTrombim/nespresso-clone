@@ -19,13 +19,11 @@
 </template>
 
 <script>
-import SquareButton from '@/components/ui/SquareButton.vue';
 import LoginDropdown from './LoginDropdown.vue';
 
 export default {
   name: 'user-options',
   components: {
-    SquareButton,
     LoginDropdown
   }
 }
@@ -39,9 +37,9 @@ export default {
 }
 .user-options-dropdown {
   position: absolute;
-  display: none;
+  /* display: none; */
   color: red;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 .user-options-login:hover .user-options-dropdown{
   display: flex;

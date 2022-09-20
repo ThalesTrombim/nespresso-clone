@@ -23,6 +23,11 @@ export default {
   color: #161616;
   font-family: 'Tahoma', sans-serif;
 }
+input,
+label {
+  padding: 0;
+  margin: 0;
+}
 /* #app {
   display: flex;
   flex-direction: column;

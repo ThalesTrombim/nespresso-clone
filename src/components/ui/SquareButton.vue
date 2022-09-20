@@ -1,12 +1,18 @@
 <template>
-  <div class="square-button-container">
+  <button class="square-button-container" :class="mode">
     <slot></slot>
-  </div>
+  </button>
 </template>
 
 <script>
 export default {
   name: 'square-button',
+  props: {
+    mode: {
+      type: String,
+      require: false,
+    }
+  }
 }
 </script>
 
@@ -31,6 +37,17 @@ export default {
 
 .square-button-container:hover .glyphicon{
   color: #000;
+}
+
+.inverted {
+  border: 1px solid #000;
+  justify-content: center;
+  background: #FFF;
+  color: #000;
+}
+.inverted:hover {
+  background: #000;
+  color: #FFF;
 }
 
 .glyphicon {
