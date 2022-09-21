@@ -1,5 +1,5 @@
 <template>
-  <div class="simple-modal-backdrop">
+  <div class="simple-modal--backdrop">
     <div class="simple-modal-container">
       conteudo
     </div>
@@ -12,8 +12,8 @@ export default {
 }
 </script>
 
-<style scoped>
-.simple-modal-backdrop {
+<style lang="scss" scoped>
+.simple-modal--backdrop {
   background: rgba(0, 0, 0, .3);
   right: 0;
   position: fixed;

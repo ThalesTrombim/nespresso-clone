@@ -22,22 +22,27 @@ export default {
 }
 </script>
 
-<style scoped>
-.main-header--container {
-  background: #000;
-}
-.main-header--content {
-  max-width: 996px;
-  margin: auto;
-  color: #FFF;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-}
-.main-header--userArea {
-  color: #FFF;
-}
-.main-header--logo img{
-  width: 157px;
+<style lang="scss" scoped>
+.main-header {
+  &--container {
+    background: #000;
+  }
+
+  &--content {
+    max-width: 996px;
+    margin: auto;
+    color: #FFF;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &--userArea {
+    color: #FFF;
+  }
+
+  &--logo img{
+    width: 157px;
+  }
 }
 </style>

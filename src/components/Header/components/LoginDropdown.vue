@@ -40,77 +40,94 @@ export default {
 }
 </script>
 
-<style scoped>
-.login-dropdown--container {
-  color: red;
-  background: #FFF;
-  max-width: inherit;
-  margin-left: -16px;
-  min-width: 227px;
-  padding: 14px;
-}
-.login-dropdown--header{
-  padding: 0;
-}
-.login-dropdown--header span{
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.login-dropdown--header p{
-  font-size: 9px;
-  font-weight: 400;
-  margin: 10px 0 20px 0;
-}
-.login-dropdown--form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.login-dropdown--form a {
-  color: #986f38;
-  text-transform: none;
+<style lang="scss" scoped>
+.login-dropdown {
+  &--container {
+    color: red;
+    background: #FFF;
+    max-width: inherit;
+    margin-left: -16px;
+    max-width: 227px;
+    padding: 14px;
+  }
+
+  &--header {
+    padding: 0;
+
+    span {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 9px;
+      font-weight: 400;
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  &--form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    a {
+      color: #986f38;
+      text-transform: none;
+    }
+  }
+
+  &--input {
+    input {
+      border-radius: 4px;
+      border: 1px solid #CCC;
+      padding: 16px 4px 4px;
+      font-size: 16px;
+
+      &:focus {
+        border: 1px solid #000;
+        outline: 0;
+      }
+    }
+  } 
+
+  &--divisor {
+    width: 100%;
+    border-bottom: .5px solid #EEE;
+    margin: 20px 0;
+  }
+
+  &--register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    button{
+      text-transform: none;
+      width: 100%;
+    }
+
+    p{
+      margin: 10px 0;
+      font-size: 12px;
+      text-transform: none;
+    }
+  }
 }
 
-.login-dropdown--input input {
-  border-radius: 4px;
-  border: 1px solid #CCC;
-  padding: 16px 4px 4px;
-  font-size: 16px;
-}
-.login-dropdown--input input:focus {
-  border: 1px solid #000;
-  outline: 0;
-}
 .keep-loged-wrapper {
   display: flex;
   align-items: center;
   gap: 8px;
+
+  label {
+    font-weight: 500;
+    text-transform: none;
+  }
+
+  input{
+    margin: 0;
+  }
 }
-.keep-loged-wrapper label{
-  font-weight: 500;
-  text-transform: none;
-}
-.keep-loged-wrapper input{
-  margin: 0;
-}
-.login-dropdown--divisor {
-  width: 100%;
-  border-bottom: .5px solid #EEE;
-  margin: 20px 0;
-}
-.login-dropdown--register {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-.login-dropdown--register button{
-  text-transform: none;
-  width: 100%;
-}
-.login-dropdown--register p{
-  margin: 10px 0;
-  font-size: 12px;
-  text-transform: none;
-}
+
 </style>
