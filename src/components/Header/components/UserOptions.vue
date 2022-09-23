@@ -9,9 +9,8 @@
     </square-button>
     <square-button>
       <span class="glyphicon glyphicon-gift"></span>
-      <div class="user-options-gift">
-        <mini-modal></mini-modal>
-      </div>
+      <div class="user-options--gift"></div>
+      <mini-modal></mini-modal>
     </square-button>
     <square-button>
       <span class="glyphicon glyphicon-shopping-cart"></span>
@@ -53,6 +52,15 @@ export default {
         display: flex;
       }
     }
+  }
+
+  &--gift {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #171717BF;
   }
 }
 </style>
