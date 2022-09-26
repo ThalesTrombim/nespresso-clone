@@ -27,16 +27,30 @@ export default {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 
     span {
       text-transform: none;
+    }
+
+    button {
+      max-width: 100px;
+      padding: 5px 25px;
+      margin: auto;
+      margin-top: 10px;
+      border-radius: 50px;
+      border: 1px solid #000;
+
+      &:hover {
+        background: #000;
+        color: #FFF;
+      }
     }
   }
 
   &--title {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 500;
     
     p {
       margin: 0;
@@ -46,5 +60,6 @@ export default {
       color: #D8AE00;
     }
   }
+
 }
 </style>
