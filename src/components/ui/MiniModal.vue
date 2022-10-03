@@ -1,5 +1,5 @@
 <template>
-  <div class="mini-modal--container">
+  <div class="mini-modal--container" v-if="1 === false">
     <div class="mini-modal--title">
       <p>EXPERIÊNCIAS</p>
       <p class="mini-modal--title_colered">PERSONALIZADAS</p>

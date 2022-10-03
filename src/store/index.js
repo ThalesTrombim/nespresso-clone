@@ -1,7 +1,10 @@
-import { createStore } from "vuex";
+import Vue from "vue";
+import Vuex from "vuex";
 import ShopCart from "./modules/ShopCart";
 
-const store = createStore({
+Vue.use(Vuex);
+
+const store = new Vuex.Store({
   modules: {
     cart: ShopCart,
   },

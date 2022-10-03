@@ -1,13 +1,14 @@
 <template>
-  <div class="shopcart-container">
+  <div class="shopcart-container" v-if="isCartOpen">
     <div class="shopcart-header">
       <p>CARRINHO</p>
+      <p>teste {{ isCartOpen }}</p>
       <div class="shopcart-header--closeButton">
         X
       </div>
     </div>
     <div class="shopcart-client-month">
-      <img src="../../assets/general/client-month.jpg" alt="Mês do cliente">
+      <img src="../../assets/general/flash-sales.jpg" alt="Mês do cliente">
       <span>Aproveite <strong>FRETE GRATIS</strong> no seu pedido.</span>
     </div>
     <div class="shopcart-items-area">
@@ -19,7 +20,12 @@
 
 <script>
 export default {
-  name: 'shop-cart'
+  name: 'shop-cart',
+  computed: {
+    isCartOpen() {
+      return this.$store.state.shopcartIsOpen
+    }
+  }
 }
 </script>
 
