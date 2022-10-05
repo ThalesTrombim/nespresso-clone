@@ -9,10 +9,10 @@
     </square-button>
     <square-button>
       <span class="glyphicon glyphicon-gift"></span>
-      <div class="user-options--gift"></div>
+      <!-- <div class="user-options--gift"></div> -->
       <mini-modal></mini-modal>
     </square-button>
-    <square-button>
+    <square-button :action="setShopcart">
       <span class="glyphicon glyphicon-shopping-cart"></span>
       Seu carrinho (0)
 
@@ -22,11 +22,18 @@
 
 <script>
 import LoginDropdown from './LoginDropdown.vue';
+import { mapActions } from 'vuex';
 
 export default {
   name: 'user-options',
   components: {
     LoginDropdown
+  },
+  methods: {
+    ...mapActions('cart', ['setShopcart']),
+    // teste() {
+    //   console.log('testando click')
+    // }
   }
 }
 </script>

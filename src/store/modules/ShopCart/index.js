@@ -1,13 +1,11 @@
+import state from "./state";
 import actions from "./actions";
 import getters from "./getters";
 import mutations from "./mutations";
 
 export default {
-  state() {
-    return {
-      shopcartIsOpen: false,
-    };
-  },
+  namespaced: true,
+  state,
   actions,
   getters,
   mutations,

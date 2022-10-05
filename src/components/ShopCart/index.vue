@@ -1,8 +1,8 @@
 <template>
-  <div class="shopcart-container" v-if="isCartOpen">
+  <div class="shopcart-container" v-if="shopcartIsOpen">
     <div class="shopcart-header">
       <p>CARRINHO</p>
-      <p>teste {{ isCartOpen }}</p>
+      <p>teste {{ shopcartIsOpen }}</p>
       <div class="shopcart-header--closeButton">
         X
       </div>
@@ -19,13 +19,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'shop-cart',
   computed: {
-    isCartOpen() {
-      return this.$store.state.shopcartIsOpen
-    }
-  }
+    ...mapState("cart", ['shopcartIsOpen'])
+  },
 }
 </script>
 

@@ -1,1 +1,5 @@
-export default {};
+export default {
+  getshop(state) {
+    return state.shopcartIsOpen;
+  },
+};

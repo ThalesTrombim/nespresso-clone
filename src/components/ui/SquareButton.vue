@@ -1,5 +1,5 @@
 <template>
-  <button class="square-button--container" :class="mode">
+  <button class="square-button--container" :class="mode" @click="action">
     <slot></slot>
   </button>
 </template>
@@ -11,6 +11,11 @@ export default {
     mode: {
       type: String,
       require: false,
+    },
+    action: {
+      type: Function,
+      require: false,
+      default: () => {} 
     }
   }
 }
