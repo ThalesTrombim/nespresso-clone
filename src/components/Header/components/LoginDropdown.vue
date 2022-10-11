@@ -1,5 +1,5 @@
 <template>
-  <div class="login-dropdown--container">
+  <div class="login-dropdown--container" v-if="loginDropdown">
     <div class="login-dropdown--header">
       <span>INICIAR SESSÃO</span>
       <p>Acesse sua conta e faça o seu pedido</p>
@@ -35,8 +35,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
-  name: 'login-dropdown'
+  name: 'login-dropdown',
+  computed: {
+    ...mapState('login', ['loginDropdown'])
+  }
 }
 </script>
 
