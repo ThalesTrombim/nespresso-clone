@@ -24,9 +24,6 @@ export default {
   computed: {
     ...mapState('navbar', ['navbarList'])
   },
-  mounted() {
-    return console.log(this.navbarList)
-  }
 }
 </script>
 
