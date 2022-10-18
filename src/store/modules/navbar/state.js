@@ -1,9 +1,9 @@
 export default {
   navbarList: [
-    {
-      label: "Ofertas Especiais",
-      icon: "offer",
-    },
+    // {
+    //   label: "Ofertas Especiais",
+    //   icon: "offer",
+    // },
     {
       label: "Cafés",
       icon: "vertuo-capsule",
