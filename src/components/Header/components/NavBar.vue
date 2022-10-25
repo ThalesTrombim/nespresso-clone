@@ -12,7 +12,9 @@
               {{ item.label }}
             </p>
           </a>
-          <div></div>
+          <div class="navbar-list--dropdown">
+            <nav-dropdown></nav-dropdown>
+          </div>
         </li>
       </ul>
     </div>
@@ -21,21 +23,31 @@
 
 <script>
 import { mapState } from 'vuex';
+import NavDropdown from './NavDropdown.vue';
 
 export default {
   name: 'nav-bar',
+  components: {
+    NavDropdown
+  },
   computed: {
     ...mapState('navbar', ['navbarList'])
   },
   methods: {
     getImageUrl(pet) {
       return require('../../../assets/icons/'+pet+'.png')
+    },  
+    dropdownSelected(module) {
+      return `navbar-list--dropdown-${module}`
     }
   }
 }
 </script>
 
 <style lang="scss">
+.navbar-list--dropdown {
+  display: none;
+}
 .navbar {
   &-container {
     background: #1B1B1B;
@@ -95,6 +107,11 @@ export default {
       border-left-color: #fff;
     }
     
+    &:hover {
+      .navbar-list--dropdown {
+        display: flex;
+      }
+    }
   }
 }
 
