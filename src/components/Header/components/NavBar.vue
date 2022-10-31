@@ -37,9 +37,6 @@ export default {
     getImageUrl(pet) {
       return require('../../../assets/icons/'+pet+'.png')
     },  
-    dropdownSelected(module) {
-      return `navbar-list--dropdown-${module}`
-    }
   }
 }
 </script>

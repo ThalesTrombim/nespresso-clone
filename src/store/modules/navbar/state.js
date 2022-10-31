@@ -9,6 +9,28 @@ export default {
       icon: "vertuo-capsule",
       module: {
         name: "coffee",
+        items: [
+          {
+            title: "CÁPSULAS VERTUO",
+            image: "",
+            links: [
+              {
+                label: "Comprar Cápsulas Vertuo",
+                link: "Conheça o Sistema Vertuo",
+              },
+            ],
+          },
+          {
+            title: "CÁPSULAS ORIGINAL",
+            image: "",
+            links: [
+              {
+                label: "Comprar Cápsulas Original",
+                link: "Conheça o Sistema Original",
+              },
+            ],
+          },
+        ],
       },
     },
     {
