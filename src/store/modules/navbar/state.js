@@ -4,6 +4,7 @@ export default {
     //   label: "Ofertas Especiais",
     //   icon: "offer",
     // },
+    // TIPOS DE DIV'S 1.LIST-LINKS, 2.DOUBLE, 3.BANNER, 4.SINGLE
     {
       label: "Cafés",
       icon: "vertuo-capsule",
@@ -13,10 +14,15 @@ export default {
           {
             title: "CÁPSULAS VERTUO",
             image: "",
+            type: "LIST-LINKS",
             links: [
               {
                 label: "Comprar Cápsulas Vertuo",
-                link: "Conheça o Sistema Vertuo",
+                link: "",
+              },
+              {
+                label: "Conheça o Sistema Vertuo",
+                link: "",
               },
             ],
           },
@@ -26,7 +32,25 @@ export default {
             links: [
               {
                 label: "Comprar Cápsulas Original",
-                link: "Conheça o Sistema Original",
+                link: "",
+              },
+              {
+                label: "Conheça o Sistema Original",
+                link: "",
+              },
+            ],
+          },
+          {
+            title: "CÁPSULAS ORIGINAL",
+            image: "",
+            links: [
+              {
+                label: "Comprar Cápsulas Original",
+                link: "",
+              },
+              {
+                label: "Comprar Cápsulas Original",
+                link: "",
               },
             ],
           },

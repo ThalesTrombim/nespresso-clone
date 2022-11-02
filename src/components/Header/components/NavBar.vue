@@ -23,7 +23,7 @@
 
 <script>
 import { mapState } from 'vuex';
-import NavDropdown from './NavDropdown.vue';
+import NavDropdown from './NavDropdown';
 
 export default {
   name: 'nav-bar',
