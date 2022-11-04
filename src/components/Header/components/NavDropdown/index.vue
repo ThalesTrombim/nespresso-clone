@@ -2,6 +2,7 @@
     <div class="nav-dropdown--container">
       <component
         :is="contentType"
+        :content="items[0]"
       />
     </div>
 </template>
@@ -25,6 +26,12 @@ export default {
         case 'LIST-LINKS': return ListLinks;
         default: return null;
       }
+    }
+  },
+  props: {
+    items: {
+      type: Array,
+      require: true
     }
   }
 }

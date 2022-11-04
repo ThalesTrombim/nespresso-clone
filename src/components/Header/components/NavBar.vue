@@ -13,7 +13,10 @@
             </p>
           </a>
           <div class="navbar-list--dropdown">
-            <nav-dropdown></nav-dropdown>
+            <nav-dropdown
+              :items="item.module.items"
+            >
+            </nav-dropdown>
           </div>
         </li>
       </ul>
