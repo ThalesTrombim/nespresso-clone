@@ -7,7 +7,6 @@
             <span 
               :style="{ 'background-image': 'url(' + getImageUrl(item.icon) + ')' }"
             ></span>
-            <!-- <img :src="getImageUrl(item.icon)" alt=""> -->
             <p>
               {{ item.label }}
             </p>
@@ -44,7 +43,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .navbar-list--dropdown {
   display: none;
 }

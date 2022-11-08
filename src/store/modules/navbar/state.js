@@ -18,26 +18,41 @@ export default {
             links: [
               {
                 label: "Comprar Cápsulas Vertuo",
-                link: "",
+                link: "#",
               },
               {
                 label: "Conheça o Sistema Vertuo",
-                link: "",
+                link: "#",
               },
             ],
           },
           {
-            title: "CÁPSULAS VERTUO",
-            image: "coffee",
+            title: "CÁPSULAS ORIGINAL",
+            image: "coffee-original",
             type: "LIST-LINKS",
             links: [
               {
-                label: "Comprar Cápsulas Vertuo",
-                link: "",
+                label: "Comprar Cápsulas Original",
+                link: "#",
               },
               {
-                label: "Conheça o Sistema Vertuo",
-                link: "",
+                label: "Conheça o Sistema Original",
+                link: "#",
+              },
+            ],
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Descubra o seu sistema ideal",
+                link: "#",
+                image: "#",
+              },
+              {
+                label: "Até R$150 de desconto na compra de cafés",
+                link: "#",
+                image: "#",
               },
             ],
           },
