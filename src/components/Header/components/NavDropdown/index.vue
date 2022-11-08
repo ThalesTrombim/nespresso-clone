@@ -4,6 +4,10 @@
         :is="contentType"
         :content="items[0]"
       />
+      <component
+        :is="contentType"
+        :content="items[1]"
+      />
     </div>
 </template>
 
@@ -24,9 +28,13 @@ export default {
     contentType() {
       switch(this.type) {
         case 'LIST-LINKS': return ListLinks;
+        case 'DOUBLE': return ListLinks;
         default: return null;
       }
     }
+  },
+  mounted() {
+    console.log('items', this.items)
   },
   props: {
     items: {
@@ -42,6 +50,7 @@ export default {
   &--container {
     background: #FFF;
     position: absolute;
+    display: flex;
     z-index: 10;
   }
 }

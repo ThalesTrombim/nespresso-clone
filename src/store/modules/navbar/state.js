@@ -13,7 +13,7 @@ export default {
         items: [
           {
             title: "CÁPSULAS VERTUO",
-            image: "",
+            image: "coffee",
             type: "LIST-LINKS",
             links: [
               {
@@ -27,29 +27,16 @@ export default {
             ],
           },
           {
-            title: "CÁPSULAS ORIGINAL",
-            image: "",
+            title: "CÁPSULAS VERTUO",
+            image: "coffee",
+            type: "LIST-LINKS",
             links: [
               {
-                label: "Comprar Cápsulas Original",
+                label: "Comprar Cápsulas Vertuo",
                 link: "",
               },
               {
-                label: "Conheça o Sistema Original",
-                link: "",
-              },
-            ],
-          },
-          {
-            title: "CÁPSULAS ORIGINAL",
-            image: "",
-            links: [
-              {
-                label: "Comprar Cápsulas Original",
-                link: "",
-              },
-              {
-                label: "Comprar Cápsulas Original",
+                label: "Conheça o Sistema Vertuo",
                 link: "",
               },
             ],
