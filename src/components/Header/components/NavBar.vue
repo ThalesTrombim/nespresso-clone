@@ -36,9 +36,9 @@ export default {
     ...mapState('navbar', ['navbarList'])
   },
   methods: {
-    getImageUrl(pet) {
-      return require('../../../assets/icons/'+pet+'.png')
-    },  
+    getImageUrl(image) {
+      return require("../../../assets/icons/" + image + ".png");
+    },
   }
 }
 </script>

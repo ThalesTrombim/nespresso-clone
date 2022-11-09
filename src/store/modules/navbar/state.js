@@ -1,9 +1,5 @@
 export default {
   navbarList: [
-    // {
-    //   label: "Ofertas Especiais",
-    //   icon: "offer",
-    // },
     // TIPOS DE DIV'S 1.LIST-LINKS, 2.DOUBLE, 3.BANNER, 4.SINGLE
     {
       label: "Cafés",
@@ -47,12 +43,12 @@ export default {
               {
                 label: "Descubra o seu sistema ideal",
                 link: "#",
-                image: "#",
+                image: "double-system-0",
               },
               {
                 label: "Até R$150 de desconto na compra de cafés",
                 link: "#",
-                image: "#",
+                image: "double-system-1",
               },
             ],
           },
