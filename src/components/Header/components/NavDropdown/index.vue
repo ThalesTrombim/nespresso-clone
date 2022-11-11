@@ -21,12 +21,17 @@
       <div class="nav-dropdown--divider">
         <div></div>
       </div>
+      <component
+        :is="contentType(items[3].type)"
+        :content="items[3]"
+      />
     </div>
 </template>
 
 <script>
 import ListLinks from './ListLinks.vue';
 import TheDouble from './TheDouble.vue';
+import TheBanner from './TheBanner.vue';
 
 export default {
   name: 'nav-dropdown', 
@@ -34,23 +39,16 @@ export default {
     ListLinks,
     TheDouble
   },
-  data(){
-    return {
-      type: 'LIST-LINKS'
-    }
-  },
   methods: {
     contentType(componentType) {
       switch(componentType) {
         case 'LIST-LINKS': return ListLinks;
         case 'DOUBLE': return TheDouble;
+        case 'BANNER': return TheBanner;
         default: return null;
       }
     }
   },
-  mounted(){
-    console.log('teste',this.items[0].type)
-  },  
   props: {
     items: {
       type: Array,
@@ -69,7 +67,7 @@ export default {
     z-index: 10;
   }
   &--divider {
-    padding: 3% 0;
+    padding: 1% 0 2% 0;
     width: 1px;
 
     div {

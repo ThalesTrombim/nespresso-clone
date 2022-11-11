@@ -52,6 +52,11 @@ export default {
               },
             ],
           },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "coffee-banner",
+          },
         ],
       },
     },
