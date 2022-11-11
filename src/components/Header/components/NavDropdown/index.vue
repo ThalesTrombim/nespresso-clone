@@ -18,6 +18,9 @@
         :is="contentType(items[2].type)"
         :content="items[2]"
       />
+      <div class="nav-dropdown--divider">
+        <div></div>
+      </div>
     </div>
 </template>
 

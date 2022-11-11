@@ -2,8 +2,10 @@
   <div class="double-component--container">
     <ul>
       <li v-for="item in content.items" :key="item.label">
-        <img :src="getImageUrl(item.image, 'png')" alt="">
-        <span>{{ item.label }}</span>
+        <a :href="item.link">
+          <img :src="getImageUrl(item.image, 'png')" alt="">
+          <span>{{ item.label }}</span>
+        </a>
       </li>
     </ul>
   </div>
@@ -30,9 +32,26 @@ export default {
 <style lang="scss" scoped>
 .double-component {
   &--container {
+    max-width: 270px;
+
     ul {
       list-style: none;
       padding: 10px;
+
+      li {
+        padding: 10px 20px;
+      
+        a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          gap: 10px;
+        }
+      }
+
+      img {
+        width: 80px;
+      }
     }
   }
 }
