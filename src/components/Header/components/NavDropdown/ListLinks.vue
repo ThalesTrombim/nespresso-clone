@@ -69,7 +69,7 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 3px 17px;
+      padding: 3px 7px;
       /* &:hover {
         background: #b8b8b8;
       } */
