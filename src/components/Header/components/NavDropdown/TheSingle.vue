@@ -1,20 +1,15 @@
 <template>
-  <div class="list-link--container">
-    <a href="#">
+  <div class="the-single--container">
+    <a :href="content.link">
       <span :class="{isSmall: content.smallTitle}">{{ content.title }}</span>
       <img :src="getImageUrl(content.image)" alt="">
     </a>
-    <ul>
-      <li v-for="link in content.links" :key="link.label">
-        <a :href="link.link">{{ link.label }}</a>
-      </li>
-    </ul>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'list-links',
+  name: 'the-single',
   props: {
     content: {
       type: Object,
@@ -30,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.list-link {
+.the-single {
   &--container {
     padding: 10px;
     padding-bottom: 0;
@@ -43,6 +38,7 @@ export default {
       flex-direction: column;
       align-items: center;
       gap: 10px;
+      text-decoration: none;
 
       span {
         font-size: 16px;
@@ -51,30 +47,11 @@ export default {
         text-align: center;
       }
       img {
-        width: 100px;
+        width: 120px;
+        margin-top: 20px;
       }
     }
 
-    li {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &:hover {
-        background: #b8b8b8;
-      }
-    }
-    a {
-      color: rgb(65, 130, 0);
-      font-weight: 700;
-      text-decoration: none;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 3px 7px;
-    }
   }
 }
 </style>

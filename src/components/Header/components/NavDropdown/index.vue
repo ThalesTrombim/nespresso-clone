@@ -36,6 +36,7 @@
 import ListLinks from './ListLinks.vue';
 import TheDouble from './TheDouble.vue';
 import TheBanner from './TheBanner.vue';
+import TheSingle from './TheSingle.vue';
 
 export default {
   name: 'nav-dropdown', 
@@ -49,6 +50,7 @@ export default {
         case 'LIST-LINKS': return ListLinks;
         case 'DOUBLE': return TheDouble;
         case 'BANNER': return TheBanner;
+        case 'SINGLE': return TheSingle;
         default: return null;
       }
     }

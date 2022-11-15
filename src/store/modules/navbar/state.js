@@ -88,34 +88,17 @@ export default {
           },
           {
             title: "Ganhou Cartão de Assinatura? Ative aqui",
-            image: "coffee-original",
+            image: "subscription-2",
             smallTitle: true,
-            type: "LIST-LINKS",
-            links: [
-              {
-                label: "Comprar Cápsulas Original",
-                link: "#",
-              },
-              {
-                label: "Conheça o Sistema Original",
-                link: "#",
-              },
-            ],
+            type: "SINGLE",
+            link: "#"
           },
           {
-            type: "DOUBLE",
-            items: [
-              {
-                label: "Descubra o seu sistema ideal",
-                link: "#",
-                image: "double-system-0",
-              },
-              {
-                label: "Até R$150 de desconto na compra de cafés",
-                link: "#",
-                image: "double-system-1",
-              },
-            ],
+            title: "Pedido Automático - Receba sempre seus cafés favoritos",
+            image: "subscription-3",
+            smallTitle: true,
+            type: "SINGLE",
+            link: "#"
           },
           {
             type: "BANNER",
