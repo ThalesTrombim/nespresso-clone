@@ -68,6 +68,7 @@ export default {
         items: [
           {
             title: "Assinatura Nespresso: 10% de Crédito extra todos os meses",
+            smallTitle: true,
             image: "subscription-1",
             type: "LIST-LINKS",
             links: [
@@ -88,6 +89,7 @@ export default {
           {
             title: "Ganhou Cartão de Assinatura? Ative aqui",
             image: "coffee-original",
+            smallTitle: true,
             type: "LIST-LINKS",
             links: [
               {

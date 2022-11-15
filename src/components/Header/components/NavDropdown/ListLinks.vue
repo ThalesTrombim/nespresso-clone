@@ -1,7 +1,7 @@
 <template>
   <div class="list-link--container">
     <a href="#">
-      <span>{{ content.title }}</span>
+      <span :class="{isSmall: content.smallTitle}">{{ content.title }}</span>
       <img :src="getImageUrl(content.image)" alt="">
     </a>
     <ul>
@@ -32,8 +32,13 @@ export default {
 <style lang="scss" scoped>
 .list-link {
   &--container {
-    padding: 20px;
+    padding: 10px;
+    padding-bottom: 0;
     
+    .isSmall {
+      font-size: 14px;
+    }
+
     a {
       display: flex;
       flex-direction: column;
@@ -44,6 +49,7 @@ export default {
         font-size: 16px;
         color: #474747;
         font-weight: 400;
+        text-align: center;
       }
       img {
         width: 100px;
@@ -55,7 +61,6 @@ export default {
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 10px;
 
       &:hover {
         background: #b8b8b8;
@@ -70,9 +75,6 @@ export default {
       align-items: center;
       justify-content: center;
       padding: 3px 7px;
-      /* &:hover {
-        background: #b8b8b8;
-      } */
     }
   }
 }

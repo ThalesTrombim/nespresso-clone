@@ -66,10 +66,12 @@ export default {
 .nav-dropdown {
   &--container {
     background: #FFF;
+    // background: blue;
     position: absolute;
     display: flex;
     z-index: 10;
     right: 0;
+    max-height: 248px;
   }
   &--divider {
     padding: 1% 0 2% 0;
@@ -77,12 +79,13 @@ export default {
 
     div {
       width: 1px;
-      height: 100%;
+      height: 228px;
       background-color: #D5D5D5;
     }
   }
 
   &--content {
+    width: 24.5%;
     max-width: 25%;
   }
 }

@@ -27,6 +27,11 @@ export default {
 .banner-component {
   &--container {
     padding: 10px;
+
+    img {
+      width: 238px;
+      height: 228px;
+    }
   }
 }
 </style>

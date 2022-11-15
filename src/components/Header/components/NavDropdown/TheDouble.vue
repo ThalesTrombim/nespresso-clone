@@ -33,6 +33,8 @@ export default {
 .double-component {
   &--container {
     max-width: 270px;
+    display: flex;
+    align-items: center;
 
     ul {
       list-style: none;
@@ -40,12 +42,23 @@ export default {
 
       li {
         padding: 10px 20px;
-      
+        position: relative;
+
         a {
           display: flex;
           align-items: center;
           text-decoration: none;
           gap: 10px;
+        }
+
+        &:not(:nth-child(2))::before {
+          content: "";
+          position: absolute;
+          height: 0;
+          bottom: 0;
+          left: 20px;
+          right: 21px;
+          border-bottom: 1px solid #d5d5d5;
         }
       }
 
