@@ -4,7 +4,7 @@
       <li v-for="item in content.items" :key="item.label">
         <a :href="item.link">
           <img :src="getImageUrl(item.image, 'png')" alt="">
-          <span>{{ item.label }}</span>
+          <span :style="item.style">{{ item.label }}</span>
         </a>
       </li>
     </ul>
@@ -42,6 +42,7 @@ export default {
 
       li {
         padding: 10px 20px;
+        padding-left: 10px;
         position: relative;
 
         a {

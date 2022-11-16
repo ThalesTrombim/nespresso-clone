@@ -6,7 +6,12 @@
     </a>
     <ul>
       <li v-for="link in content.links" :key="link.label">
-        <a :href="link.link">{{ link.label }}</a>
+        <a 
+          :href="link.link"
+          :style="link.style"
+          >
+          {{ link.label }}
+        </a>
       </li>
     </ul>
   </div>

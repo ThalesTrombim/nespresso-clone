@@ -2,7 +2,7 @@
   <div class="the-single--container">
     <a :href="content.link">
       <span :class="{isSmall: content.smallTitle}">{{ content.title }}</span>
-      <img :src="getImageUrl(content.image)" alt="">
+      <img :src="getImageUrl(content.image, content.ext)" alt="">
     </a>
   </div>
 </template>
@@ -17,8 +17,8 @@ export default {
     }
   },
   methods: {
-    getImageUrl(pet) {
-      return require('../../../../assets/navbar/'+pet+'.jpg')
+    getImageUrl(pet, ext='.jpg') {
+      return require('../../../../assets/navbar/'+pet+ext)
     },  
   }
 }

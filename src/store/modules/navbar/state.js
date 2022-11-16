@@ -103,40 +103,62 @@ export default {
           {
             type: "BANNER",
             link: "#",
-            image: "coffee-banner",
+            image: "subscription-4",
           },
         ],
       },
     },
-    // {
-    //   label: "Assinatura",
-    //   icon: "subscription",
-    //   module: {
-    //     name: "subscription",
-    //     items: [
-    //       {
-    //         title: "CÁPSULAS VERTUO",
-    //         image: "coffee",
-    //         type: "LIST-LINKS",
-    //         links: [
-    //           {
-    //             label: "Comprar Cápsulas Vertuo",
-    //             link: "#",
-    //           },
-    //           {
-    //             label: "Conheça o Sistema Vertuo",
-    //             link: "#",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
     {
       label: "Máquinas",
       icon: "vertuo-machine",
       module: {
         name: "machine",
+        items: [
+          {
+            title: "DESCONTO ESPECIAL EM MÁQUINAS",
+            smallTitle: false,
+            image: "machines-1",
+            type: "LIST-LINKS",
+            links: [
+              {
+                label: "VERTUO COM 30% OFF + VOUCHER",
+                link: "#",
+                style: 'font-size: 11.5px'
+              },
+              {
+                label: "INISSIA POR R$399 + VOUCHER",
+                link: "#",
+              }
+            ],
+          },
+          {
+            title: "ASSINATURA DE MÁQUINA VERTUO",
+            image: "machines-2",
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Ganhe até R$150 comprando uma máquina de café",
+                link: "#",
+                image: "machines-3",
+                style: 'font-size: 13.5px'
+              },
+              {
+                label: "Assistência técnica",
+                link: "#",
+                image: "double-system-1",
+              },
+            ],
+          },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "coffee-banner",
+          },
+        ],
       },
     },
     {
@@ -144,6 +166,50 @@ export default {
       icon: "accessories",
       module: {
         name: "accessories",
+        items: [
+          {
+            title: "30% OFF EM ACESSÓRIOS SELECIONADOS",
+            image: "accessories-1",
+            ext: ".png",
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Xícaras e copos",
+                link: "#",
+                image: "accessories-2",
+              },
+              {
+                label: "Porta-cápsulas",
+                link: "#",
+                image: "accessories-3",
+              },
+            ],
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Espumadores de leite Aeroccino",
+                link: "#",
+                image: "accessories-4",
+              },
+              {
+                label: "Para Harmonizar",
+                link: "#",
+                image: "accessories-5",
+              },
+            ],
+          },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "coffee-banner",
+          },
+        ],
       },
     },
     {
