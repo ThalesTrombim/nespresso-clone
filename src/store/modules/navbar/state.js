@@ -260,6 +260,42 @@ export default {
       icon: "our-services",
       module: {
         name: "services",
+        items: [
+          {
+            title: "Rastreie o seu pedido",
+            image: "services-2",
+            ext: '.png',
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            title: "Confira o prazo de entrega para sua região",
+            image: "services-3",
+            ext: '.png',
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Pontos de Coleta para suas cápsulas",
+                link: "#",
+                image: "services-4",
+              },
+              {
+                label: "Encontre uma Boutique Nespresso",
+                link: "#",
+                image: "services-5",
+              },
+            ],
+          },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "services-1",
+          },
+        ]
       },
     },
     {
