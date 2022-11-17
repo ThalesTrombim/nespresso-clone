@@ -207,7 +207,7 @@ export default {
           {
             type: "BANNER",
             link: "#",
-            image: "coffee-banner",
+            image: "accessories-6",
           },
         ],
       },
@@ -217,6 +217,42 @@ export default {
       icon: "member-benefit",
       module: {
         name: "benefit",
+        items: [
+          {
+            title: "Quer saber o seu status?",
+            smallTitle: false,
+            image: "benefits-2",
+            type: "LIST-LINKS",
+            links: [
+              {
+                label: "Acesse sua conta",
+                link: "#",
+                style: 'font-size: 11.5px; margin-top: 10px;'
+              },
+              {
+                label: "Descubra seus benefícios",
+                link: "#",
+              }
+            ],
+          },
+          {
+            title: "Nespresso & YOU: O programa de benefícios Nespresso",
+            image: "benefits-3",
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            title: "30% OFF EM ACESSÓRIOS SELECIONADOS",
+            image: "benefits-4",
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "benefits-1",
+          },
+        ],
       },
     },
     {
