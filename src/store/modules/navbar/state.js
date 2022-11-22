@@ -415,6 +415,55 @@ export default {
         name: "business",
         items: [
           {
+            title: "Quer ter Nespresso no seu negócio?",
+            image: "business-1",
+            type: "LIST-LINKS",
+            links: [
+              {
+                label: "Restaurantes",
+                link: "#",
+              },
+              {
+                label: "Hotéis",
+                link: "#",
+              },
+              {
+                label: "Escritórios",
+                link: "#",
+              },
+            ],
+          },
+          {
+            title: "Assinatura ideal para seu estabelecimento comercial",
+            image: "business-2",
+            type: "LIST-LINKS",
+            links: [
+              {
+                label: "Máquina SEM CUSTOS",
+                link: "#",
+              },
+              {
+                label: "Saiba Mais",
+                link: "#",
+              }
+            ],
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Máquinas e Cápsulas profissionais",
+                link: "#",
+                image: "business-3",
+              },
+              {
+                label: "Dúvidas Frequentes",
+                link: "#",
+                image: "business-4",
+              },
+            ],
+          },
+          {
             type: "BANNER",
             link: "#",
             image: "business-6",
