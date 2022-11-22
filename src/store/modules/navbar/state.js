@@ -303,6 +303,56 @@ export default {
       icon: "sustainability",
       module: {
         name: "sustainability",
+        items: [
+          {
+            title: "RECICLE SUAS CÁPSULAS!",
+            smallTitle: false,
+            image: "sustainability-1",
+            type: "LIST-LINKS",
+            links: [
+              {
+                label: "SAIBA COMO",
+                link: "#",
+                // style: 'font-size: 11.5px; margin-top: 10px;'
+              },
+            ],
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Nespresso: Empresa B Certificada",
+                link: "#",
+                image: "sustainability-2",
+              },
+              {
+                label: "Nós cuidamos das comunidades",
+                link: "#",
+                image: "sustainability-3",
+              },
+            ],
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Nós cuidamos do clima",
+                link: "#",
+                image: "sustainability-4",
+              },
+              {
+                label: "Nós cuidamos da circularidade",
+                link: "#",
+                image: "sustainability-5",
+              },
+            ],
+          },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "sustainability-6",
+          },
+        ]
       },
     },
     {
@@ -310,6 +360,52 @@ export default {
       icon: "contact-FAQ",
       module: {
         name: "contact",
+        items: [
+          {
+            title: "Chat Online",
+            image: "contact-1",
+            smallTitle: true,
+            type: "SINGLE",
+            link: "#"
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Fale conosco pelo Whatsapp",
+                link: "#",
+                image: "sustainability-4",
+                style: 'font-size: 13px'
+              },
+              {
+                label: "Dúvidas Frequentes",
+                link: "#",
+                image: "sustainability-5",
+              },
+            ],
+          },
+          {
+            type: "DOUBLE",
+            items: [
+              {
+                label: "Assistência técnica",
+                link: "#",
+                image: "sustainability-4",
+              },
+              {
+                label: "Telefone Gratuito 0800 7777 737",
+                link: "#",
+                image: "sustainability-5",
+                style: 'font-size: 13.5px'
+              },
+            ],
+          },
+          {
+            type: "BANNER",
+            link: "#",
+            image: "contact-6",
+          },
+        ]
       },
     },
     {
@@ -317,6 +413,13 @@ export default {
       icon: "business",
       module: {
         name: "business",
+        items: [
+          {
+            type: "BANNER",
+            link: "#",
+            image: "business-6",
+          },
+        ]
       },
     },
   ],
