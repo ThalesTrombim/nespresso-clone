@@ -3,7 +3,7 @@
     <div class="navbar-content">
       <ul class="navbar-list-container">
         <li v-for="item in navbarList" :key="item.label" class="navbar-list-items">
-          <a href="#">
+          <a href="#" :class="[moduleName == item.module.name ? 'navbar-list--dropdown--hover' : '']">
             <span 
               :style="{ 'background-image': 'url(' + getImageUrl(item.icon) + ')' }"
             ></span>
@@ -14,6 +14,8 @@
           <div class="navbar-list--dropdown">
             <nav-dropdown
               :items="item.module.items"
+              :component-hover="item.module.name"
+              @component='handleHoverComponent'
             >
             </nav-dropdown>
           </div>
@@ -32,6 +34,11 @@ export default {
   components: {
     NavDropdown
   },
+  data() {
+    return {
+      moduleName: ''
+    }
+  },
   computed: {
     ...mapState('navbar', ['navbarList'])
   },
@@ -39,6 +46,9 @@ export default {
     getImageUrl(image) {
       return require("../../../assets/icons/" + image + ".png");
     },
+    handleHoverComponent(item) {
+      this.moduleName = item;
+    }
   }
 }
 </script>
@@ -47,6 +57,17 @@ export default {
 .navbar-list--dropdown {
   display: none;
 }
+
+.navbar-list--dropdown--hover {
+  background-color: #FFF;
+  p {
+    color: #000!important;
+  }
+  span{
+    background-position: 0 -20px;
+  }
+}
+
 .navbar {
   &-container {
     background: #1B1B1B;
@@ -104,6 +125,15 @@ export default {
     }
     &:hover::before{
       border-left-color: #fff;
+
+      .navbar-list-items {
+        a {
+          background-color: #FFF;
+          p {
+            color: #000;
+          }
+        }
+      }
     }
     
     &:hover {

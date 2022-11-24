@@ -1,5 +1,9 @@
 <template>
-    <div class="nav-dropdown--container">
+    <div 
+      class="nav-dropdown--container" 
+      @mouseenter="$emit('component', componentHover)"
+      @mouseleave="$emit('component', '')"
+    >
       <component
         :is="contentType(items[0].type)"
         :content="items[0]"
@@ -59,8 +63,12 @@ export default {
     items: {
       type: Array,
       require: true
+    },
+    componentHover: {
+      type: String,
+      require: true
     }
-  }
+  },
 }
 </script>
 
@@ -68,7 +76,7 @@ export default {
 .nav-dropdown {
   &--container {
     background: #FFF;
-    // background: blue;
+    box-shadow: 0 -2px 0 #fff, 0px 2px 8px 0px rgba(99, 99, 99, 0.2);
     position: absolute;
     display: flex;
     z-index: 10;
